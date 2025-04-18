@@ -11,7 +11,7 @@ function div(num1, num2) {
     return num1 / num2;
 }
 let operation;
-function calculator(num1, num2,operation) {
+function calculator(num1, num2, operation) {
     if (operation === 'add') {
         console.log(add(num1, num2));
 
@@ -28,10 +28,8 @@ function calculator(num1, num2,operation) {
         console.log(div(num1, num2));
 
     }
-    
-
 }
-calculator(2,3,'subs');
+calculator(2, 3, 'subs');
 
 
 
