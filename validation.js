@@ -57,10 +57,13 @@ console.log(nameCreator(firstName, lastName));
 let products = [
     { name: 'Soap', price: 230 },
     { name: 'Pen', price: 130 },
-    { name: 'Pencil', price: 330 },
+    { name: 'Pencil', price: 330 }
 ]
 function getPrice(products) {
-    console.log(products.price);
+    // for(const product of products){
+        console.log(products.price);
+    // }
+    
 }
 getPrice(products);
 
