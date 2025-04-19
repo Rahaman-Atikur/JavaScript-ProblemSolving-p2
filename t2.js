@@ -12,17 +12,17 @@ const heights2 = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
 
 
 */
-let friends = ['rahim', 'robin', 'rafi', 'ron', 'rashed'];
+let friends = ['rahim', 'robin', 'rafi', 'ronokkhan', 'rashed'];
 function shortNameFinder(friends) {
-    let minLength;
+    let minLengthName =[];
     for (let i = 0; i < friends.length-1; i++) {
       
         if(friends[i].length<friends[i+1].length){
-            minLength = friends[i].length;
+            minLengthName = friends[i];
         }
     }
-    return minLength;
+    return minLengthName;
 }
-shortNameFinder(friends);
+console.log(shortNameFinder(friends));
 
 
