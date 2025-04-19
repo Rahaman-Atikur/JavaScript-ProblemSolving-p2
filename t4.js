@@ -6,22 +6,17 @@
     mobile = 20000 tk
 Write a JavaScript function named calculateElectronicsBudget that takes in the number of laptop, tablets, and mobile and returns the total money required.
 --------------------------------------------------------------------------------------
-1.declare an array that takes the number of electronics
-2.pass the function 
-3. price * amount = particular price 
-4. all particular price total 
-5. return it 
+1.no of mobile and their price and sum all of them
  */
 
-let numbersOfElectronics =[2,2,2];
-let price = [35000,15000,20000];
-let total =0 ;
-function calculateElectronicsBudget(numbersOfElectronics,price){
-    for(let i=0;i<price.length;i++){
-       
-         console.log( price[i]*numbersOfElectronics[j]);
-        
-    }
-    return total;
+let mobilePrice = 20000;
+let tabletPrice = 15000;
+let laptopPrice = 35000;
+function calculateElectronicsBudget(noOfMobile, noOfTablet, noOfLaptop) {
+    let totalBillForMobile = noOfMobile * 20000;
+    let totalBillForTablet = noOfTablet * 15000;
+    let totalBillForLaptop = noOfLaptop * 35000;
+    return total = totalBillForMobile + totalBillForTablet + totalBillForLaptop;
 }
-console.log(calculateElectronicsBudget(numbersOfElectronics,price));
+let budget = calculateElectronicsBudget(2,2,2);
+console.log(budget);
